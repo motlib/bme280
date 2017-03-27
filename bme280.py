@@ -273,8 +273,6 @@ class BME280(object):
             if convtime > BME280_MEAS_TIMEOUT:
                 raise Exception('Sensor conversion timeout')
 
-        print(convtime)
-
 
     def _start_meas(self, os_t=BME280_OSRS_8, os_p=BME280_OSRS_8, os_h=BME280_OSRS_8):
         '''Start the measurement.
