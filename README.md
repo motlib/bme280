@@ -37,7 +37,7 @@ print("humidity={0}".format(res.humidity))
 Or you can run bme280.py as a stand-alone application. It will query
 the sensor values once and print the result to the console. Run it as
 
-    python bme280.py --help
+    $ python bme280.py --help
 
 to print the command-line help:
 
@@ -49,4 +49,10 @@ to print the command-line help:
       --addr ADDR  Sensor I2C address
       --os OS      Oversampling setting. 1=1x, 2=2x, 3=4x, 4=8x, 5=16x.
         
+The output looks like this:
+
+    $ python bme280.py --os 5
+    temperature=20.9580170684
+    pressure=1013.00577913
+    humidity=43.6237501913
 
