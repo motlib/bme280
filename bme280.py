@@ -328,7 +328,7 @@ if __name__ == '__main__':
     args = _parse_args()
     bus_number = int(args.bus)
     i2c_addr = int(args.addr, 0)
-    os = min(5, max(args.os, 0))
+    os = min(5, max(int(args.os), 0))
 
     bus = SMBus(bus_number)
     sensor = BME280(bus, i2c_addr)
